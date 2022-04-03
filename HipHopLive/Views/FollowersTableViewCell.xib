@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="followCell" rowHeight="80" id="KGk-i7-Jjw" customClass="FollowersTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SLF-C5-NUe">
+                        <rect key="frame" x="10" y="4" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="70" id="M6s-oL-d6a"/>
+                            <constraint firstAttribute="width" constant="70" id="kfy-2C-OLp"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhZ-bw-tve">
+                        <rect key="frame" x="235" y="24" width="76" height="30"/>
+                        <color key="backgroundColor" red="0.17254901959999999" green="0.47450980390000003" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="RKp-sU-d4Q"/>
+                            <constraint firstAttribute="width" constant="76" id="geb-Od-A9s"/>
+                        </constraints>
+                        <state key="normal" title="Following">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0t7-ch-TxE">
+                        <rect key="frame" x="88" y="14" width="135" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="PjH-mG-LuQ"/>
+                            <constraint firstAttribute="width" constant="135" id="qo7-Xi-oPj"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gbp-Kw-HKf">
+                        <rect key="frame" x="88" y="43" width="135" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="135" id="Wj7-7G-rxd"/>
+                            <constraint firstAttribute="height" constant="21" id="g3d-J6-uTA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fdl-kj-5Eb">
+                        <rect key="frame" x="0.0" y="78.5" width="320" height="1"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="KSL-5B-1hB"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="fdl-kj-5Eb" secondAttribute="trailing" id="5q0-4l-24a"/>
+                    <constraint firstAttribute="trailing" secondItem="bhZ-bw-tve" secondAttribute="trailing" constant="9" id="I1q-t9-GZx"/>
+                    <constraint firstItem="0t7-ch-TxE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="XKU-y1-3S9"/>
+                    <constraint firstItem="Gbp-Kw-HKf" firstAttribute="top" secondItem="0t7-ch-TxE" secondAttribute="bottom" constant="8" id="b5J-dL-1nd"/>
+                    <constraint firstItem="Gbp-Kw-HKf" firstAttribute="leading" secondItem="SLF-C5-NUe" secondAttribute="trailing" constant="8" id="e09-1M-hRV"/>
+                    <constraint firstItem="bhZ-bw-tve" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="24" id="egF-Cl-hKH"/>
+                    <constraint firstItem="0t7-ch-TxE" firstAttribute="leading" secondItem="SLF-C5-NUe" secondAttribute="trailing" constant="8" id="he8-26-21G"/>
+                    <constraint firstAttribute="bottom" secondItem="fdl-kj-5Eb" secondAttribute="bottom" id="lGQ-1K-w7a"/>
+                    <constraint firstItem="fdl-kj-5Eb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="lx8-b6-pgu"/>
+                    <constraint firstItem="SLF-C5-NUe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="pZ3-Q7-mVl"/>
+                    <constraint firstItem="SLF-C5-NUe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="uuw-Ol-dgP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="follow_Btn" destination="bhZ-bw-tve" id="QjA-XO-7bd"/>
+                <outlet property="name_Lbl" destination="Gbp-Kw-HKf" id="Xub-OK-Csc"/>
+                <outlet property="profile_pic" destination="SLF-C5-NUe" id="5Ug-Tz-WIl"/>
+                <outlet property="user_name_Lbl" destination="0t7-ch-TxE" id="odt-K2-l7s"/>
+            </connections>
+            <point key="canvasLocation" x="-17.600000000000001" y="17.991004497751124"/>
+        </tableViewCell>
+    </objects>
+</document>

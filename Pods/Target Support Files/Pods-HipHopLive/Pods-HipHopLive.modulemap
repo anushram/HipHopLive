@@ -1,0 +1,6 @@
+module Pods_HipHopLive {
+  umbrella header "Pods-HipHopLive-umbrella.h"
+
+  export *
+  module * { export * }
+}

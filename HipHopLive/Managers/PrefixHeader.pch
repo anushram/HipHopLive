@@ -1,0 +1,111 @@
+//
+//  PrefixHeader.pch
+//  HipHopLive
+//
+//  Created by K Saravana Kumar on 26/10/18.
+//  Copyright © 2018 Securenext. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+//Framework classes
+#import "AFNetworking.h"
+#import "MBProgressHUD.h"
+#import "Constants.h"
+#import "ApiManager.h"
+#import <SDWebImage/UIImageView+WebCache.h>
+
+//AVAudio Framworks
+#import <AudioToolbox/AudioToolbox.h>
+#import <AVFoundation/AVAsset.h>
+#import <MediaPlayer/MediaPlayer.h>
+#import <AVFoundation/AVFoundation.h>
+
+//Manager Classes
+#import "Singletons.h"
+
+//UIViewController classes
+#import "ViewController.h"
+#import "LandingViewController.h"
+#import "LoginViewController.h"
+#import "SignUpViewController.h"
+#import "TabBarController.h"
+#import "RapMusicViewController.h"
+#import "RapMusicRecordViewController.h"
+#import "RapVideoPlayerViewController.h"
+#import "CommonVideoPlayerViewController.h"
+#import "ProfileUploadViewController.h"
+#import "SoloMusicViewController.h"
+#import "SoloMusicRecordViewController.h"
+#import "SoloVideoPlayerViewController.h"
+#import "UserInviteViewController.h"
+#import "UserProfileView.h"
+#import "FollowersFollowingViewController.h"
+#import "WebViewController.h"
+
+
+//view classes
+#import "BeatLabViewController.h"
+#import "MyProfileTableViewCell.h"
+#import "ChannelTableViewCell.h"
+#import "CustomizeTableViewCell.h"
+#import "CollabsTableViewCell.h"
+#import "CollabsCollectionViewCell.h"
+#import "UserListTableViewCell.h"
+#import "InvitesTableViewCell.h"
+#import "ActivityTableViewCell.h"
+#import "FollowersTableViewCell.h"
+#import "SettingsTableViewCell.h"
+
+
+//API Classes
+#import "LoginResponse.h"
+#import "UserDetails.h"
+#import "StateResponse.h"
+#import "CountryResponse.h"
+#import "StateDetail.h"
+#import "CountryDetail.h"
+#import "CategoriesResponse.h"
+#import "CategoriesDetail.h"
+#import "BeatMusicResponse.h"
+#import "BeatMusicDetail.h"
+#import "ChannelResponse.h"
+#import "ChannelDetail.h"
+#import "BeatMusicLikeResponse.h"
+#import "CustomizeCategoryResponse.h"
+#import "MusicFeedResponse.h"
+#import "CollabsLikeResponse.h"
+#import "MusicSoloFeed.h"
+#import "MusicDuetFeed.h"
+#import "UsersListResponse.h"
+#import "UserInviteResponse.h"
+#import "InvitesSoloDetail.h"
+#import "UserDetailResponse.h"
+#import "UserProfileView.h"
+#import "FollowResponse.h"
+#import "FollowDetails.h"
+#import "CommonResponse.h"
+#import "ViewUserResponse.h"
+#import "ViewUserDetail.h"
+
+
+//Extension Class
+#import "ViewController+Common.h"
+#import "UIColor+Common.h"
+#import "UIButton+Common.h"
+#import "UILabel+Common.h"
+#import "UIView+Common.h"
+#import "UIImageview+Common.h"
+
+
+//pod classes
+#import <CCDropDownMenus/CCDropDownMenus.h>
+
+
+
+#endif /* PrefixHeader_pch */
